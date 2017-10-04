@@ -1,0 +1,198 @@
+
+body {
+	background-color: #232323;
+}
+
+.mainDiv {
+	width: 950px;
+	height: 450px;
+	background-color: #333333;
+	margin: 20px auto 20px auto;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px #141414;
+}
+
+#street-view {
+	width: 600px;
+	height: 400px;
+	float: left;
+	background-color: #121212;
+	margin: 10px;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px #141414;
+}
+.streetViewImg {
+	position: absolute;
+	border-radius: 3px;
+}
+
+.controllsDiv {
+	width: 320px;
+	height: 400px;
+	float: left;
+	background-color: transparent;
+	margin: 10px 0 0 0;
+	border-radius: 3px;
+	padding: 0;
+}
+
+.CtrlBtnsHolder {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+#prev_btn, #next_btn, #playpause_btn, #stop_btn {
+	float: left;
+	margin-right: 2px;
+	width: auto;
+	font-size: 14px;
+}
+
+.timeLineDiv {
+	width: 930px;
+	height: 10px;
+	float: left;
+	background-color: transparent;
+	margin: 10px 0 10px 10px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.progress {
+	height: 10px;
+	background-color: #404040;
+	box-shadow: 0.1px 0.1px 0px #000000, 0px 0px 0.1px #0d0d0d;
+}
+
+.frameDurationRangeDiv {
+	width: 230px;
+	height: 20px;
+	float: left;
+	background-color: transparent;
+	margin: 14px 0 0 0;
+	padding: 0;
+}
+
+.playSpeedP {
+	width: 90px;
+	height: 20px;
+	float: left;
+	font-size: 14px;
+	color: #9E9E9E;
+	background-color: transparent;
+	margin: 8px 0 0 0px;
+	padding: 0 0 0 5px;
+}
+
+.PanoramaMode {
+	width: auto;
+	height: 20px;
+	float: left;
+	font-size: 14px;
+	color: #9E9E9E;
+	background-color: transparent;
+	margin: 6px 0 0 0px;
+	padding: 0 10px 0 5px;
+}
+
+#PanoramaModeBtn {
+	float: right;
+	margin: 0;
+	font-size: 14px;
+	color: #9E9E9E;
+	background-color: #212121;
+	outline: none;
+	border: 1px solid #272727;
+}
+#PanoramaModeBtn:hover {
+	background-color: #404040;
+}
+#PanoramaModeBtn span.on {
+	color: #8DC9FC;
+}
+#PanoramaModeBtn span.off {
+	color: inherit;
+}
+
+.PointsABholder {
+	float: left;
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+.PointsABlabel {
+	width: 10%;
+	height: 25px;
+	float: left;
+	margin: 0 0 5px 0;
+	text-align: center;
+	padding-top: 3px;
+	background-color: #404040;
+	font-size: 14px;
+	color: #9E9E9E;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 1px #141414;
+}
+
+.PointsABin {
+	width: 90%;
+	height: 25px;
+	float: left;
+	margin: 0 0 5px 0;
+	padding-left: 5px;
+	background-color: #404040;
+	font-size: 14px;
+	color: #B3B3B3;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 1px #141414;
+}
+.PointsABin:focus {
+	box-shadow: 0px 0px 1px #8DC9FC;
+}
+.flipAB_btn {
+	width: 10%;
+	float: left;
+	font-size: 14px;
+	margin: 0 5px 0 0;
+	text-align: center;
+	padding: 7px 5px 5px 5px;
+}
+
+#resetMapBtn {
+	float: left;
+	font-size: 14px;
+}
+
+#getRouteBtn {
+	float: right;
+	font-size: 14px;
+}
+
+.MapViewDiv {
+	float: left;
+	width: 100%;
+	height: 220px;
+	margin: 12px auto 0 auto;
+	background-color: #121212;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px #141414;
+}
+
+.whomadethis {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #B3B3B3;
+}
+

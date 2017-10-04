@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>GoogleMaps StreetView</title>
+		<link rel="stylesheet" href="deps/bootstrap-3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="frameDurationRange.css" />
+		
+		<script type="text/javascript" src="deps/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="deps/polyline.js"></script>
+		<script type="text/javascript" src="deps/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="GM_Points.js"></script>
+		<script type="text/javascript" src="GM_inputLocations.js"></script>
+		<script type="text/javascript" src="WalkingControlls.js"></script>
+		<script type="text/javascript" src="PointIterator.js"></script>
+		<script type="text/javascript" src="mapView.js"></script>
+		<script type="text/javascript" src="static_streetView.js"></script>
+		<script type="text/javascript" src="panorama_streetView.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	
+	<body>
+		<div class="container mainDiv">
+			
+			<div class="container timeLineDiv">
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="0"
+						aria-valuemin="0" aria-valuemax="100" style="width:0%">
+							<span class="sr-only">0% Complete</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container" id="street-view" ></div>
+			
+			<div class="container controllsDiv">
+				<div class="container CtrlBtnsHolder" >
+					<button id="prev_btn" class="btn btn-primary" > <span class="glyphicon glyphicon-backward"></span> </button>
+					<button id="next_btn" class="btn btn-primary" > <span class="glyphicon glyphicon-forward"></span> </button>
+					<button id="playpause_btn" class="btn btn-primary" > <span class="glyphicon glyphicon-play"></span> </button>
+					<button id="stop_btn" class="btn btn-primary" > <span class="glyphicon glyphicon-stop"></span> </button>
+					<button id="PanoramaModeBtn" class="btn btn-primary" > Panorama is <span class="off">OFF</span> </button>
+				</div>
+				
+				<p class="playSpeedP" > Play speed: </p>
+				<div class="frameDurationRangeDiv">
+					<input id="frameDuration" class="frameDurationRange" type="range" />
+				</div>
+				<br/>
+				
+				<div class="container PointsABholder" >
+					<p class="PointsABlabel" id="PointAlabel"> A </p>
+					<input class="PointsABin" id="pointAin" type="text" placeholder="" ></input>
+					
+					<p class="PointsABlabel" id="PointBlabel"> B </p>
+					<input class="PointsABin" id="pointBin" type="text" placeholder="" ></input>
+					
+					<!-- <button class="btn btn-primary flipAB_btn" id="flipABbtn" > <span class="glyphicon glyphicon-sort"></span> </button> -->
+					
+					<button class="btn btn-primary" id="resetMapBtn"> Reset mapView </button>
+					<button class="btn btn-primary" id="getRouteBtn"> GO </button>
+				</div>
+				
+				<div class="container MapViewDiv" id="mapView" ></div>
+			</div>
+			
+		</div>
+		
+		<p class="whomadethis" > <b>©</b> 2017 - Stefan Videnović </p>
+		
+		<!-- &callback=initAutocomplete -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoT18PzHMgmZDV6EkqQBEFRhS18DpBbZ4&libraries=places"></script>
+		
+	</body>
+
+</html>
