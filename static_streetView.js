@@ -1,7 +1,8 @@
 
 function static_streetView( gmp, pit, wctrl, mapV ){
 	
-	this.myGoogleAPIkey = "AIzaSyCoT18PzHMgmZDV6EkqQBEFRhS18DpBbZ4";
+	//~ this.myGoogleAPIkey = "AIzaSyCoT18PzHMgmZDV6EkqQBEFRhS18DpBbZ4";
+	this.myGoogleAPIkey = "AIzaSyB8-Tn0OWU9vwiqL6fPXvG4IQZNSfXcHww";
 	
 	this.transSpeed = 250;
 	
